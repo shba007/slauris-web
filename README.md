@@ -1,75 +1,15 @@
-# Nuxt 3 Minimal Starter
+<p align="center">
+  <img src="./public/logo.png" lt="Logo" width="65" />
+<p>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Slauris
 
-## Setup
+> Slauris Official Website
 
-Make sure to install the dependencies:
+<p align="center">
+  <a href="https://uptime.betterstack.com/?utm_source=status_badge">
+    <img src="https://uptime.betterstack.com/status-badges/v3/monitor/167q6.svg" alt="uptime status">
+  </a>
+</p>
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+![Landing](public/previews/landing.webp)

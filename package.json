@@ -1,18 +1,49 @@
 {
-  "name": "nuxt-app",
+  "name": "slauris",
+  "description": "Slauris Official Website",
+  "author": "Shirsendu Bairagi <shirsendu2001@gmail.com>",
+  "version": "0.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "^20.15.0"
+  },
+  "license": "MIT",
   "scripts": {
-    "build": "nuxt build",
+    "postinstall": "nuxt prepare",
     "dev": "nuxt dev",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier .  --write",
+    "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "start": "node .output/server/index.mjs",
+    "tunnel": "untun tunnel --port 3000  http://localhost:3000",
+    "clean": "nuxt cleanup",
+    "docker:build": "docker build --build-arg VERSION_TAG=dev -t untest-dashboard:dev .",
+    "docker:start": "docker run --detach --name untest-dashboard --env-file .env.prod -p 2001:3000 ghcr.io/shba007/untest-dashboard:latest"
   },
   "dependencies": {
     "vue": "latest"
   },
   "devDependencies": {
-    "nuxt": "^3.12.4"
+    "@changesets/cli": "^2.27.7",
+    "@nuxt/eslint": "^0.4.0",
+    "@nuxt/fonts": "^0.7.1",
+    "@nuxt/image": "^1.7.0",
+    "@nuxt/test-utils": "^3.14.0",
+    "@nuxtjs/color-mode": "^3.4.2",
+    "@nuxtjs/seo": "^2.0.0-rc.16",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@pinia/nuxt": "^0.5.2",
+    "@vite-pwa/nuxt": "^0.9.1",
+    "@vueuse/nuxt": "^10.11.0",
+    "eslint-config-prettier": "^9.1.0",
+    "nuxt": "^3.12.4",
+    "nuxt-icons": "^3.2.1",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "untun": "^0.1.3"
   }
 }
