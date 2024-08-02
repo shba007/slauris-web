@@ -16,7 +16,7 @@ export default {
     },
     fontFamily: {
       // head: ['"Exo 2"', 'sans-serif'],
-      // body: ['"Exo 2"', 'sans-serif'],
+      body: ['"Roboto Mono"', 'sans-serif'],
     },
     fontWeight: {
       light: 300,
@@ -28,9 +28,9 @@ export default {
       transparent: 'transparent',
       white: '#FFFFFF',
       light: {
-        400: '#8D8D8D',
-        500: '',
-        600: '',
+        400: '#FEFEFE',
+        500: '#E8E8E8',
+        600: '#9AA5B8',
       },
       black: '#000000',
       dark: {
