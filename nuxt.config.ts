@@ -10,9 +10,39 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/seo',
     '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
+    // '@pinia/nuxt',
     '@vite-pwa/nuxt',
     '@vueuse/nuxt',
+    'nuxt-gtag',
     'nuxt-icons',
   ],
+  nitro: {
+    compressPublicAssets: true,
+  },
+  routeRules: {
+    '/': { swr: true },
+    // '/_ipx/**': { headers: { 'cache-control': 'max-age=31536000' } },
+    // '/images/**': { headers: { 'cache-control': 'max-age=31536000' } },
+    // '/fonts/**': { headers: { 'cache-control': 'max-age=31536000' } },
+  },
+  runtimeConfig: {
+    app: {
+      version: '',
+    },
+    private: {},
+  },
+  image: {
+    format: ['avif', 'webp'],
+    quality: 80
+  },
+  colorMode: {
+    preference: 'light',
+    fallback: 'light',
+    classSuffix: '',
+  },
+  site: {
+    name: 'Slauris',
+    url: 'https://slauris.com',
+  },
+  gtag: {},
 })

@@ -12,7 +12,7 @@
       <CTAButton title="Learn More" />
     </div>
     <div class="h-full flex-1">
-      <NuxtImg src="/images/drone.png" :width="794" class="absolute right-1/4 top-1/2 -translate-y-1/2 translate-x-1/2" />
+      <NuxtImg src="/images/drone.png" alt="drone" :width="794" class="absolute right-1/4 top-1/2 -translate-y-1/2 translate-x-1/2" />
     </div>
   </section>
 </template>

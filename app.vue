@@ -1,3 +1,48 @@
+<script setup lang="ts">
+const title = `Connecting Wholesalers Directly to Retailer`
+const description = `Streamline your supply chain by connecting wholesalers directly to retailers. Cut out middlemen, reduce costs, and increase efficiency in B2B transactions. Discover how direct wholesaler-retailer connections can boost your business.`
+const url = 'https://slauris.com'
+
+useSeoMeta({
+  ogType: 'profile',
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: url + '/previews/landing.webp',
+  ogImageWidth: 1280,
+  ogImageHeight: 640,
+  ogUrl: url,
+  fbAppId: 966242223397117,
+  twitterCard: 'summary_large_image',
+  colorScheme: 'light dark',
+})
+
+useSchemaOrg([
+  defineLocalBusiness({
+    name: 'Slauris',
+    address: {
+      streetAddress: 'Anand Raj Nagar, Belur Bally, Howrah',
+      addressLocality: 'Howrah',
+      addressRegion: 'WB',
+      postalCode: '711227',
+      addressCountry: 'IN',
+    },
+    image: url + '/logo.png',
+  }),
+  defineWebPage({
+    datePublished: new Date(2024, 8, 1).toISOString(),
+    dateModified: new Date(2024, 8, 1).toISOString(),
+    author: 'Shirsendu Bairagi',
+  }),
+  defineWebSite({
+    url: url,
+    name: title,
+    description: description,
+  }),
+])
+</script>
+
 <template>
   <div>
     <NuxtRouteAnnouncer />
