@@ -21,8 +21,8 @@
     "start": "node .output/server/index.mjs",
     "tunnel": "untun tunnel --port 3000  http://localhost:3000",
     "clean": "nuxt cleanup",
-    "docker:build": "docker build --build-arg VERSION_TAG=dev -t untest-dashboard:dev .",
-    "docker:start": "docker run --detach --name untest-dashboard --env-file .env.prod -p 2001:3000 ghcr.io/shba007/untest-dashboard:latest"
+    "docker:build": "docker build --build-arg VERSION_TAG=dev -t slauris:dev .",
+    "docker:start": "docker run --detach --name slauris --env-file .env.prod -p 2002:3000 slauris:dev"
   },
   "dependencies": {
     "vue": "latest"
