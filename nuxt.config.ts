@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   },
   image: {
     format: ['avif', 'webp'],
-    quality: 80
+    quality: 80,
   },
   colorMode: {
     preference: 'light',
@@ -44,5 +44,10 @@ export default defineNuxtConfig({
     name: 'Slauris',
     url: 'https://slauris.com',
   },
-  gtag: {},
+  robots: {
+    disallow: ['/_nuxt/'],
+  },
+  gtag: {
+    loadingStrategy: 'async',
+  },
 })
