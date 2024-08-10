@@ -31,6 +31,13 @@ export default defineNuxtConfig({
     },
     private: {},
   },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
+    },
+  },
   image: {
     format: ['avif', 'webp'],
     quality: 80,
